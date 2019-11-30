@@ -1,0 +1,31 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	   http://localhost/AtomGame/public/home#
+${Regis URL}    http://localhost/AtomGame/public/register
+${Donat URL}    http://localhost/AtomGame/public/donor
+${BROWSER}	Chrome
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+	
+Login Donator
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    Donator 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+	Set Selenium Speed    0
+
+TS037 แก้ไขข้อมูลแต่ละรายการแข่งขันที่ตนเองลงแข่งขันได้  
+TC38 เข้าถึงแบบไม่มี path
+	Page Should Contain    ลงทะเบียนแข่งขันกีฬาและกิจกรรม
+	
+TC39 เข้าถึงแบบมี path 
+	Go to    http://localhost/AtomGame/public/registerSNA
+	Page Should Not Contain    ลงทะเบียนแข่งขันกีฬาและกิจกรรม
+	

@@ -1,0 +1,35 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	   http://localhost/AtomGame/public/home#
+${Regis URL}    http://localhost/AtomGame/public/register
+${Donat URL}    http://localhost/AtomGame/public/donor
+${BROWSER}	Chrome
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+	
+TC29 การยืนยันข้อมูลและหลักฐานการบริจาค
+	Set Selenium Speed    0.5
+	Go to    ${Donat URL}
+	Page Should Contain    การยืนยันข้อมูลและหลักฐานการบริจาค
+	Click Element    //*[@id="ShowGender"]/div[1]/label
+	Select From List    xpath=//select[@id="prename"]    P005
+	Input Text    inputfullname    Donator Latasoy
+	Input Text    inputORG    LatasoyORG
+	Input Text    tell    099-999-8228
+	Input Text    E-mail    test1@gmail.com
+	Input Text    inputDDay    01-12-2561
+	Input Text    inputDCha    บริจาคผ่านการโอนเงิน
+	Input Text    inputDAm    1150
+	Click Element    //*[@id="btnImgD"]
+	Choose File    //*[@id="inputImgD"]    C:\\Users\\Pat pakha\\Pictures\\help.jpg
+	Click Element    //*[@id="btnImgL"]
+	Choose File    //*[@id="inputImgL"]    C:\\Users\\Pat pakha\\Pictures\\help.jpg
+	Click Element    //*[@id="ShowReceipt"]/div[1]
+	Click Button    ยืนยันหลักฐานการบริจาค
+	Location Should Be    ${Donat URL}
+	Page Should Contain    ยืนยันข้อมูลและหลักฐานการบริจาคสำเร็จ ทางคณะผู้จัดงานจะทำการตรวจสอบหลักฐานการบริจาคของท่านและติดต่อกลับไปเมื่อการตรวจสอบเสร็จสิ้น
+

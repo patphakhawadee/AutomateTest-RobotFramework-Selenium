@@ -1,0 +1,36 @@
+﻿***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	   http://localhost/AtomGame/public/home#
+${Regis URL}    http://localhost/AtomGame/public/register
+${BROWSER}	Chrome
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.3
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+
+TC-41 
+	
+	Go to    http://localhost/AtomGame/public/host
+	Input Text    inputName    xxxxx
+	Select From List    xpath=//select[@id="inputUNS"]    จุฬาลงกรณ์มหาวิทยาลัย
+	Input Text    inputTH   31
+	Input Text    inputYEAR    2023
+	Input Text    inputStartD    01-01-2023
+	Input Text    inputEndD    01-02-2023
+	Click Element    //*[@id="btnImgL"]
+	Choose File    //*[@id="inputImgL"]    C:\\Users\\KarTeenMung\\Desktop\\Capture.PNG
+	Click Element    //*[@id="btnImgD"]
+	Choose File    //*[@id="inputImgD"]    C:\\Users\\KarTeenMung\\Desktop\\Capture.PNG
+	Click Button    เพิ่ม
+	Page Should Contain    เพิ่มข้อมูลเจ้าภาพในการจัดงานสำเร็จ

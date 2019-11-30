@@ -1,0 +1,29 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/profile
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    http://localhost/AtomGame/public/home#    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.2
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+
+tc-49
+	Go to    ${URL}
+	Set Selenium Speed    0.2
+	Page Should Contain    ข้อมูลส่วนตัว
+

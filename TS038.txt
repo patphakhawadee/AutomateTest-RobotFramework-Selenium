@@ -1,0 +1,43 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/allSchedule
+${name}    Somshai jaidee
+${bd}    04-05-2017
+${STD}    593020467-5
+${FB}    Somyai
+${DELAY}    0
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    ${URL}    ${BROWSER}
+
+TC-38
+	Go to    http://localhost/AtomGame/public/register
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="ShowGender"]/div[1]/label
+	Select From List    xpath=//select[@id="prename"]    P004
+	Input Text    inputfullname    ${name}
+	Input Text    inputBD    ${bd}
+	Click Element    //*[@id="ShowIDcardNPass"]/div[1]/label
+	Input Text    IDcard    1110200159523
+	Input Text    inputSTD    ${STD}
+	Input Text    tell    099-111-1111
+	Input Text    tellparent    088-111-1111
+	Input Text    facebook    www.facebook.com/test
+	Click Element    //*[@id="btnImg"]
+	Choose File    //*[@id="inputImg"]    C:\\Users\\KarTeenMung\\Desktop\\Capture.PNG 
+	Select From List    xpath=//select[@id="inputType"]    CP
+	Select From List    xpath=//select[@id="inputUNS"]    มหาวิทยาลัยขอนแก่น
+	Input Text    mail    test@gmail.com
+	Input Text    inputUsername    p1234
+	Input Text    inputPassword    12345678
+	Input Text    inputCPassword    12345678
+	Click Button    ลงทะเบียน
+	Location Should Be    http://localhost/AtomGame/public/register
+	Page Should Contain    ลงทะเบียนสำเร็จ   

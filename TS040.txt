@@ -1,0 +1,32 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/createSchedule
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    http://localhost/AtomGame/public/home#    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+TC-40
+	Go to    ${URL}
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="ShowFormat"]/div[1]/label
+	Click Element    //*[@id="ShowType"]/div[1]/label
+	Select From List    xpath=//select[@id="inputName"]    S2019011
+	Select From List    xpath=//select[@id="inputMT"]    MT11
+  
+	Page Should Contain    ตารางผลลัพย์

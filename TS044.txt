@@ -1,0 +1,33 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/host_com
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    http://localhost/AtomGame/public/home#    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.2
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+TC-44
+	Go to    ${URL}
+	Set Selenium Speed    0.2
+	Input Text    inputS_T    เยสบอล
+	Input Text    inputS_E    baseball
+	Select From List    xpath=//select[@id="Gender2"]    M
+	Select From List    xpath=//select[@id="Format2"]    S
+  	Input Text    S_NUM    15
+	Click Button    เพิ่ม
+	Page Should Contain    เพิ่มข้อมูลรายการแข่งขันสำเร็จ

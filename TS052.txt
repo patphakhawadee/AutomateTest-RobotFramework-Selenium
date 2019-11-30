@@ -1,0 +1,26 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/sumMedal
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    http://localhost/AtomGame/public/home#    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.2
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+TC-52
+	Go to    ${URL}
+	Page Should Contain    ตารางรวมเหรียญการแข่งขัน

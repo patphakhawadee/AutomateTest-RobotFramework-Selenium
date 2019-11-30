@@ -1,0 +1,38 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${C URL}	http://localhost/AtomGame/public/home#
+${BROWSER}	Chrome
+
+
+
+***Testcases***
+Open Browser
+	Open Browser    ${C URL}    ${BROWSER}
+	
+Login Coordination University
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    coorUni 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+	Set Selenium Speed    0
+	
+TC22 Edit Profile
+	Go to    http://localhost/AtomGame/public/editProfile
+	Page Should Contain    แก้ไขข้อมูลส่วนตัว
+	Page Should Not Contain    ลงทะเบียนเข้าร่วมงาน
+	Click Element    //*[@id="ShowGender"]/div[1]/label
+	Select From List    xpath=//select[@id="prename"]    P004
+	Input Text    inputfullname    IOIOIO OPOPOP
+	Input Text    inputBD    01-12-2561
+	Input Text    inputSTD    59333333-3
+	Input Text    tell    099-999-8888
+	Input Text    tellparent    088-888-8888
+	Input Text    facebook    www.facebook.com/Test
+	Input Text    mail    test@gmail.com
+	Select From List    xpath=//select[@id="inputType"]    CP
+	Click Button    บันทึก

@@ -1,0 +1,19 @@
+*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    ${URL}    ${BROWSER}
+
+TC-39
+	Go to    http://localhost/AtomGame/public/registerSNA
+	Set Selenium Speed    0.5
+	Page Should Contain    ลงทะเบียนการแข่งขัน

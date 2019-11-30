@@ -1,0 +1,37 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	   http://localhost/AtomGame/public/home#
+${Regis URL}    http://localhost/AtomGame/public/register
+${BROWSER}	Chrome
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+	
+TC28 ลงทะเบียนเข้าร่วมงาน 
+	
+	Go to    ${Regis URL}
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="ShowGender"]/div[1]/label
+	Select From List    xpath=//select[@id="prename"]    P004
+	Input Text    inputfullname    พงษ์ศักดิ์  พงไพร
+	Input Text    inputBD    1998-01-01
+	Click Element    //*[@id="ShowIDcardNPass"]/div[1]/label
+	Input Text    IDcard    1110200159523
+	Input Text    inputSTD    5930212733
+	Input Text    tell    099-999-8228
+	Input Text    tellparent    088-888-8388
+	Input Text    facebook    www.facebook.com/Test2
+	Click Element    //*[@id="btnImg"]
+	Choose File    //*[@id="inputImg"]    C:\\Users\\Pat pakha\\Pictures\\help.jpg 
+	Select From List    xpath=//select[@id="inputType"]    SP
+	Select From List    xpath=//select[@id="inputUNS"]    มหาวิทยาลัยขอนแก่น
+	Input Text    mail    test1@gmail.com
+	Input Text    inputUsername    Donator
+	Input Text    inputPassword    12345678
+	Input Text    inputCPassword    12345678
+	Click Button    ลงทะเบียน
+	Location Should Be    ${Regis URL}
+	Page Should Contain    ลงทะเบียนสำเร็จ

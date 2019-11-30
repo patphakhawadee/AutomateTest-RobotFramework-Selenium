@@ -1,0 +1,26 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/host_PofU
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    http://localhost/AtomGame/public/home#    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.2
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+TC-55
+	Go to    ${URL}
+	Page Should Contain    การจัดการข้อมูลมหาวิทยาลัยที่เข้าร่วมงาน

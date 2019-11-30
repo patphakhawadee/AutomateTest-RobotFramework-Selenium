@@ -1,0 +1,44 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/donor
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    http://localhost/AtomGame/public/home#    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.2
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+
+tc-46
+	Go to    ${URL}
+	Set Selenium Speed    0.2
+	Click Element    //*[@id="ShowGender"]/div[1]/label
+	Select From List    xpath=//select[@id="prename"]    P004
+	Input Text    inputfullname    Hentai kamen
+	Input Text    inputORG    hentaicop
+	Input Text    tell    0852741963
+	Input Text    E-mail    kill_gordon@hotmail.com
+	Input Text    inputDDay    10-10-2018
+	Input Text    inputDCha    โดยตรง
+	Input Text    inputDAm    500000
+	Click Element    //*[@id="btnImgD"]
+	Choose File    //*[@id="inputImgD"]    C:\\Users\\KarTeenMung\\Desktop\\Capture.PNG
+	Click Element    //*[@id="btnImgL"]
+	Choose File    //*[@id="inputImgL"]    C:\\Users\\KarTeenMung\\Desktop\\Capture.PNG
+	
+	Click Element    //*[@id="ShowReceipt"]/div[1]/label
+	Click Button    ยืนยันหลักฐานการบริจาค
+	Page Should Contain    ยืนยันข้อมูลและหลักฐานการบริจาคสำเร็จ ทางคณะผู้จัดงานจะทำการตรวจสอบหลักฐานการบริจาคของท่านและติดต่อกลับไปเมื่อการตรวจสอบเสร็จสิ้น

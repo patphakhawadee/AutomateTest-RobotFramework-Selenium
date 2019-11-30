@@ -1,0 +1,26 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	http://localhost/AtomGame/public/home#
+${BROWSER}	Chrome
+
+
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+	
+Login Coordination University
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    coorUni 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+	Set Selenium Speed    0
+	
+TC27 ลบข้อมูลลงทะเบียนแข่งขันแต่ละรายการแข่งขันที่ตนเองลงทะเบียนได้ 
+	Go to    http://localhost/AtomGame/public/registerSNA
+	Click Button    #myModal0

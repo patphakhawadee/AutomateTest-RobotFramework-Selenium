@@ -1,0 +1,32 @@
+﻿***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	   http://localhost/AtomGame/public/home#
+${Regis URL}    http://localhost/AtomGame/public/register
+${BROWSER}	Chrome
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.3
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+
+TC-42 
+	
+	Go to    เข้าหน้า http://localhost/AtomGame/public/host_details
+	Input Text    details_even    nothing
+	Input Text    inputFaculty    www.test.com	
+	Input Text    inputUnion    www.test2.com
+	Input Text    inputFacebook    /test
+	Input Text    inputInstagram    /test
+	Click Button    บันทึก
+	Page Should Contain    บันทึกข้อมูลรายละเอียดการจัดงานสำเร็จ
+	

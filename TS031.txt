@@ -1,0 +1,29 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	   http://localhost/AtomGame/public/home#
+${Regis URL}    http://localhost/AtomGame/public/register
+${Donat URL}    http://localhost/AtomGame/public/donor
+${BROWSER}	Chrome
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+	
+Login Donator
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    Donator 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+	Set Selenium Speed    0
+
+TC32 ดูตารางการแข่งขันแต่ละรายการแข่งขัน 
+	Go to    http://localhost/AtomGame/public/allSchedule#
+	Page Should Contain    ตารางการแข่งขันกีฬาและกรีฑา
+
+	
+	

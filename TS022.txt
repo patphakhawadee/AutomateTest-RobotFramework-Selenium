@@ -1,0 +1,26 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${C URL}	http://localhost/AtomGame/public/home#
+${BROWSER}	Chrome
+
+
+
+***Testcases***
+Open Browser
+	Open Browser    ${C URL}    ${BROWSER}
+	
+Login Coordination University
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    coorUni 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+	Set Selenium Speed    0
+	
+TC23 Edit each competing item on its own
+	Go to    http://localhost/AtomGame/public/registerSNA
+	Page Should Contain    แก้ไข

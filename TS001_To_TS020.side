@@ -1,0 +1,755 @@
+{
+  "id": "f3ea28a2-3f3f-4142-86a7-f0c178d2fddf",
+  "version": "1.1",
+  "name": "Defect",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "e872c2f0-3b3d-409f-b879-4659733232ad",
+    "name": "TC003",
+    "commands": [{
+      "id": "ca4cce86-92e9-486e-8052-db736b38b728",
+      "comment": "",
+      "command": "open",
+      "target": "/AtomGame/public/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "364bf32c-f5a7-4121-9dd4-a6be0799f420",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79e99396-100b-4398-83c7-ca50301a0d65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=การลงทะเบียน",
+      "targets": [
+        ["linkText=การลงทะเบียน", "linkText"],
+        ["css=#side-main-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pages-nav-list0')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6961ab48-0da7-4770-9ca0-6f5b0dcfa9f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > div.d-flex > div",
+      "targets": [
+        ["css=a > div.d-flex > div", "css"],
+        ["css=#pages-nav-list0 > li:nth-child(1) .d-flex > div", "css:finder"],
+        ["xpath=//ul[@id='pages-nav-list0']/li/a/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b81b025-9e8f-40a7-b416-4ac1e8108be2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=การลงทะเบียน",
+      "targets": [
+        ["linkText=การลงทะเบียน", "linkText"],
+        ["css=#side-main-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pages-nav-list0')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51d33757-f5fa-4380-b4fd-f7399bf943a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pages-nav-list0 > li:nth-child(2) .d-flex > div",
+      "targets": [
+        ["css=#pages-nav-list0 > li:nth-child(2) .d-flex > div", "css:finder"],
+        ["xpath=//ul[@id='pages-nav-list0']/li[2]/a/div/div", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c864959a-b153-47bc-b4e5-a77ddcef07b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=div.col-lg-3",
+      "targets": [
+        ["css=div.col-lg-3", "css"],
+        ["css=.col-lg-3:nth-child(58)", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7613167-4ec9-415a-beee-0cefccae291d",
+      "comment": "",
+      "command": "click",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css"],
+        ["css=#ShowFormat > label:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ShowFormat']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52d1100b-fee4-4388-b511-7ca63baa0310",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowGender > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowGender > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c825b3d3-afb7-40da-9d6e-0c35c038c59e",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60e61241-a684-4b39-8a65-2214c0bba657",
+      "comment": "",
+      "command": "select",
+      "target": "id=inputName",
+      "targets": [],
+      "value": "label=ฟุตบอล (football)"
+    }, {
+      "id": "34bf84ab-0f99-41c5-9f2f-97dbd0ca94d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05505017-fde0-4f2a-9936-978f1f44d5db",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputREAL",
+      "targets": [
+        ["id=inputREAL", "id"],
+        ["name=REAL", "name"],
+        ["css=#inputREAL", "css"],
+        ["css=#inputREAL", "css:finder"],
+        ["xpath=//select[@id='inputREAL']", "xpath:attributes"],
+        ["xpath=//div[4]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93eb0a27-8b04-40cc-b28b-6106e45a603a",
+      "comment": "",
+      "command": "select",
+      "target": "id=inputREAL",
+      "targets": [],
+      "value": "label=ตัวจริง"
+    }, {
+      "id": "61703edf-1b50-4a05-932c-2802aa0eaa37",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputREAL",
+      "targets": [
+        ["id=inputREAL", "id"],
+        ["name=REAL", "name"],
+        ["css=#inputREAL", "css"],
+        ["css=#inputREAL", "css:finder"],
+        ["xpath=//select[@id='inputREAL']", "xpath:attributes"],
+        ["xpath=//div[4]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fc316b7-3ea7-4b9e-8a62-0bee3c7f98fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=div.col-lg-3",
+      "targets": [
+        ["css=div.col-lg-3", "css"],
+        ["css=.col-lg-3:nth-child(58)", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01666a36-b39b-4000-b1f6-1670dc62a3df",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowFormat > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowFormat > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowFormat']/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd7f51c0-aa15-4581-9b5c-dd13ebadebc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowGender > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowGender > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "199f7559-a406-47ea-9e38-0f29e8fbd658",
+      "comment": "",
+      "command": "click",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css"],
+        ["css=#ShowFormat > label:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ShowFormat']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0468ef54-2251-4918-8c29-694811d3fcab",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowGender > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowGender > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd1e2bf-4d1d-4b6b-a948-a9854fefa7d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fac3db8-16e6-4ac9-8b5c-97ec331bc0d6",
+      "comment": "",
+      "command": "select",
+      "target": "id=inputName",
+      "targets": [],
+      "value": "label=ฟุตบอล (football)"
+    }, {
+      "id": "6f867a87-91d1-4ddb-af82-8772bd88c6ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f9d7081-2ce6-4239-9981-bb6a358a9b00",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(6)",
+      "targets": [
+        ["css=label:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[3]", "xpath:idRelative"],
+        ["xpath=//label[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b54431a-277d-4cb5-a690-374ba4fa572f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowGender > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowGender > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d4a6b4a-4f91-4646-9d3c-fa6843ca6cb6",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caf04e92-087f-46c3-9ec6-961f352930b9",
+      "comment": "",
+      "command": "select",
+      "target": "id=inputName",
+      "targets": [],
+      "value": "label=ฟุตบอล (football)"
+    }, {
+      "id": "fda836e8-fe0f-4e1f-a79d-239fb2996bd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ff1a45d-8e13-4b59-98c2-526768acf4d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowFormat > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowFormat > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowFormat']/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "891564a8-32dc-4de0-9bc9-89c0a0a81bc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=ShowGender",
+      "targets": [
+        ["id=ShowGender", "id"],
+        ["css=#ShowGender", "css"],
+        ["css=#ShowGender", "css:finder"],
+        ["xpath=//div[@id='ShowGender']", "xpath:attributes"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceee2464-3308-464e-9e81-151c3ecaed4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowGender > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowGender > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05539a48-1ad7-4c7c-a930-7b5e362d221a",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(6)",
+      "targets": [
+        ["css=label:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[3]", "xpath:idRelative"],
+        ["xpath=//label[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e12e70c-ffa6-45d2-a9b6-649584bb9001",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff428949-4057-414a-92b8-02a1f765b497",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowGender > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowGender > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf95728f-d2e0-4a43-ba50-f3a07212687e",
+      "comment": "",
+      "command": "click",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css"],
+        ["css=#ShowFormat > label:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ShowFormat']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "098b0f25-a912-43ce-bc0a-dfc51c26d5cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=ShowGender",
+      "targets": [
+        ["id=ShowGender", "id"],
+        ["css=#ShowGender", "css"],
+        ["css=#ShowGender", "css:finder"],
+        ["xpath=//div[@id='ShowGender']", "xpath:attributes"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa5ca76a-d36c-4819-ad21-b5058669afdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ShowGender > label:nth-child(4)",
+      "targets": [
+        ["css=#ShowGender > label:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='ShowGender']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b77565f3-3cad-46ea-b028-480d9eab427c",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2f4cf9a-7692-4f7e-a97d-21168e9b9208",
+      "comment": "",
+      "command": "select",
+      "target": "id=inputName",
+      "targets": [],
+      "value": "label=ฟุตบอล (football)"
+    }, {
+      "id": "f3ef7c8c-2977-4ffd-ad2c-9a28da2349f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=Name", "name"],
+        ["css=#inputName", "css"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//select[@id='inputName']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8635a7b8-86a3-41d7-82cc-51de2211c2dc",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "show-validate-Name",
+      "targets": [],
+      "value": "ไม่มีชื่อรายการแข่งขันในประเภทและรูปแบบที่ท่านเลือก"
+    }]
+  }, {
+    "id": "73eee7aa-763b-4370-ba7a-400341a31313",
+    "name": "TC009",
+    "commands": [{
+      "id": "96166e77-500a-4a73-862c-c318b50da8c7",
+      "comment": "",
+      "command": "open",
+      "target": "/AtomGame/public/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a23b180c-28e8-464e-bbbe-da1cad362352",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=หน้าหลัก",
+      "targets": [
+        ["linkText=หน้าหลัก", "linkText"],
+        ["css=li.active > a", "css"],
+        ["css=.active > a", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://localhost/AtomGame/public/home'])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f125bd-674f-4499-9cfa-78b2963c2397",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=เกี่ยวกับงาน",
+      "targets": [
+        ["linkText=เกี่ยวกับงาน", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pages-nav-list4')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c48fe037-00be-4902-be38-3062cb451b39",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pages-nav-list4 > li > a > div.d-flex > div",
+      "targets": [
+        ["css=#pages-nav-list4 > li > a > div.d-flex > div", "css"],
+        ["css=#pages-nav-list4 > li:nth-child(1) .d-flex > div", "css:finder"],
+        ["xpath=//ul[@id='pages-nav-list4']/li/a/div/div", "xpath:idRelative"],
+        ["xpath=//li[8]/ul/li/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74596262-a029-4011-b828-dbcb5ba39e13",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "",
+      "targets": [],
+      "value": "details"
+    }]
+  }, {
+    "id": "385934bb-cf7d-4bd7-9026-60922d8483ec",
+    "name": "TC011",
+    "commands": [{
+      "id": "db949710-7b79-4ca3-90cf-8725aab9903d",
+      "comment": "",
+      "command": "open",
+      "target": "/AtomGame/public/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09a2d848-83c0-478e-8d03-b06c359737bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a > span",
+      "targets": [
+        ["css=li:nth-child(2) > a > span", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86bdafa8-3f91-4a69-a2e1-68dbe6db8bef",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pages-nav-list0 > li:nth-child(2) .d-flex > div",
+      "targets": [
+        ["css=#pages-nav-list0 > li:nth-child(2) .d-flex > div", "css:finder"],
+        ["xpath=//ul[@id='pages-nav-list0']/li[2]/a/div/div", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd9fddf-3987-453d-ba4e-770330022324",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "",
+      "targets": [],
+      "value": "แก้ไขรายการแข่งขันกีฬา"
+    }]
+  }, {
+    "id": "c5450a00-6825-4a59-9788-8028d222c286",
+    "name": "TC012",
+    "commands": [{
+      "id": "a3b93354-7abe-4084-aac1-6e62bbc2973d",
+      "comment": "",
+      "command": "open",
+      "target": "/AtomGame/public/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0139b1ee-445c-4de4-b965-2970b715b519",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=การลงทะเบียน",
+      "targets": [
+        ["linkText=การลงทะเบียน", "linkText"],
+        ["css=#side-main-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pages-nav-list0')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9481a4e2-6059-4409-9eb5-48e6b5977fd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pages-nav-list0 > li:nth-child(2) .d-flex > div",
+      "targets": [
+        ["css=#pages-nav-list0 > li:nth-child(2) .d-flex > div", "css:finder"],
+        ["xpath=//ul[@id='pages-nav-list0']/li[2]/a/div/div", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "828b33be-6eb0-4352-ae4b-d165cd087f3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-danger",
+      "targets": [
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//button[@value='0']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "066d58be-a083-4fca-8729-bdd87c91e6bb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "",
+      "targets": [],
+      "value": "แสดงหน้าต่าง ยืนยันการลบ และแสดงข้อความ คุณต้องการลบข้อมูลการลงทะเบียนแข่งขันในรายการ ชื่อรายการที่ต้องการลบ นี้หรือไม่"
+    }]
+  }, {
+    "id": "388d56c5-f3c7-4454-a7e2-b924e0b84411",
+    "name": "TC017",
+    "commands": [{
+      "id": "e891b27b-11e9-452a-a2e9-fa996ab7a15c",
+      "comment": "",
+      "command": "open",
+      "target": "/AtomGame/public/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d57fe70-4fb7-4b25-b9d2-21ebf03629b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ตารางการแข่งขัน",
+      "targets": [
+        ["linkText=ตารางการแข่งขัน", "linkText"],
+        ["css=#side-main-menu > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pages-nav-list1')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8284c7ac-50fb-4464-97c4-a9be074060c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#allSchedule2 > li > a > div.d-flex > div",
+      "targets": [
+        ["css=#allSchedule2 > li > a > div.d-flex > div", "css"],
+        ["css=#allSchedule2 .d-flex > div", "css:finder"],
+        ["xpath=//form[@id='allSchedule2']/li/a/div/div", "xpath:idRelative"],
+        ["xpath=//form[2]/li/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3074833d-9f1b-466e-b9d8-ff769626ea74",
+    "name": "TC014",
+    "commands": [{
+      "id": "3ea682bb-7226-4932-b33e-a353cdbbf6d2",
+      "comment": "",
+      "command": "open",
+      "target": "/AtomGame/public/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea46e11c-8a9e-4248-b368-5920c86a2cf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#side-main-menu > li:nth-child(2) span",
+      "targets": [
+        ["css=#side-main-menu > li:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a61e01a-fe15-4fc1-ba07-104a59b2d4ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > div.d-flex > div",
+      "targets": [
+        ["css=a > div.d-flex > div", "css"],
+        ["css=#pages-nav-list0 > li:nth-child(1) .d-flex > div", "css:finder"],
+        ["xpath=//ul[@id='pages-nav-list0']/li/a/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dbc7ff3-8035-4b75-986d-53a93aafb760",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "",
+      "targets": [],
+      "value": "ลงทะเบียนแข่งขันกีฬาและกิจกรรม"
+    }]
+  }, {
+    "id": "b7792633-b1d1-44b2-aea8-c5193a598416",
+    "name": "TC020",
+    "commands": [{
+      "id": "199e3ada-2d55-440d-8721-daf3fcc67ca2",
+      "comment": "",
+      "command": "open",
+      "target": "/AtomGame/public/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e3065f0-cc7c-4d14-91b7-b83c14a9c9a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=เกี่ยวกับงาน",
+      "targets": [
+        ["linkText=เกี่ยวกับงาน", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//ul[@id='side-main-menu']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pages-nav-list4')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cde83d9-9099-480c-94b5-df1a51891fe4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pages-nav-list4 > li > a > div.d-flex > div",
+      "targets": [
+        ["css=#pages-nav-list4 > li > a > div.d-flex > div", "css"],
+        ["css=#pages-nav-list4 > li:nth-child(1) .d-flex > div", "css:finder"],
+        ["xpath=//ul[@id='pages-nav-list4']/li/a/div/div", "xpath:idRelative"],
+        ["xpath=//li[8]/ul/li/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e18f5b79-51d3-4294-935d-9c9b5e8f777e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "",
+      "targets": [],
+      "value": "รายละเอียดการจัดงาน"
+    }]
+  }],
+  "suites": [{
+    "id": "6f938356-e6cb-4b9a-b3f9-d6e5f21c100e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e872c2f0-3b3d-409f-b879-4659733232ad"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

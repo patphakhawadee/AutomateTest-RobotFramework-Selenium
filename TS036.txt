@@ -1,0 +1,40 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+${Home URL}	   http://localhost/AtomGame/public/home#
+${Regis URL}    http://localhost/AtomGame/public/register
+${Donat URL}    http://localhost/AtomGame/public/donor
+${BROWSER}	Chrome
+
+***Testcases***
+Open Browser
+	Open Browser    ${Home URL}    ${BROWSER}
+	
+Login Donator
+	Set Selenium Speed    0.5
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    Donator 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+	Set Selenium Speed    0
+
+TC37 แก้ไขข้อมูลส่วนตัว 
+	Edit gender
+	Set Selenium Speed    0
+    Go to    http://localhost/AtomGame/public/editProfile
+	Click Element    //*[@id="ShowGender"]/div[1]/label
+	Select From List    xpath=//select[@id="prename"]    P004
+	Input Text    inputfullname    IOIOIO OPOPOP
+	Input Text    inputBD    1998-01-01
+	Input Text    inputSTD    59333333-3
+	Input Text    tell    099-999-8888
+	Input Text    tellparent    088-888-8888
+	Input Text    facebook    www.facebook.com/Test
+	Input Text    mail    test@gmail.com
+	Select From List    xpath=//select[@id="inputType"]    CP
+	Click Button    บันทึก
+	
+	

@@ -1,0 +1,33 @@
+﻿*** Settings ***
+Library    Selenium2Library
+
+*** Variables ***
+${BROWSER}    Chrome
+${URL}    http://localhost/AtomGame/public/host_addU
+
+
+*** Keywords ***
+
+
+*** Testcases ***
+Open Browser
+	Open Browser    http://localhost/AtomGame/public/home#    ${BROWSER}
+
+Login Admin
+	Set Selenium Speed    0.2
+	Click Element    //*[@id="loginBtn"]
+  	Click Element    //*[@id="Username"]
+  	Input Text    Username    p1234 
+  	Click Element    //*[@id="Password"]
+  	Input Text    Password    12345678
+  	Click Button    login
+TC-43
+	Go to    ${URL}
+	Set Selenium Speed    0.2
+	Input Text    inputus_T    มหาลัยมหาลอก
+	Input Text    inputus_E    Mhaharok
+	Input Text    inputus_AB    MHR
+	Click Element    //*[@id="btnImg"]
+	Choose File    //*[@id="inputImg"]    C:\\Users\\KarTeenMung\\Desktop\\Capture.PNG
+	Click Button    เพิ่ม
+	Page Should Contain    เพิ่มข้อมูลมหาวิทยาลัยสำเร็จ
